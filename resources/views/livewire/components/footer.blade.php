@@ -121,7 +121,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-12">
 							<div class="copyright-text">
-								<p>Copyright © 2026 TOPSAF. Dévelopé par <a href="https://christianbetoko.dev">CB</a></p>
+								<p>Copyright © 2026 TOPSAF. Développé par <a href="https://christianbetoko.dev">CB</a></p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-12">
