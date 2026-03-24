@@ -63,7 +63,7 @@
 							<!-- Latest Post -->
 							<div class="single-widget">
 								<h3 class="widget-title">Dernières événements</h3>
-								<div class="widget-post">
+								{{-- <div class="widget-post">
 									<div class="post-img">
 										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
 									</div>
@@ -80,7 +80,7 @@
 										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
 										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
 									</div>
-								</div>
+								</div> --}}
 							</div>
 						</div>
 						<!-- Single-Widget -->
