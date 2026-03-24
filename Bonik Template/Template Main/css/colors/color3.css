@@ -1,0 +1,22 @@
+.single-service .number h6,.breadcrumbs-menu li.active a,.breadcrumbs-menu li a:hover,.topbar .topbar-address ul li a i,.header .nav-item .navigation li.active a,.header .navigation li a:hover,.hero-area .hero-content .theme-btn:hover,.hero-area .video-main .video,.about-content h2 b,.single-service .service-head i,.single-service .service-content h4:hover,.single-blog .blog-body h5 a:hover, .blog-title-meta .blog-meta span i,.single-comments .body .meta,.single-comments .comment-list .meta,.blog-c-form label span,.popular-feeds .feed-desc h6 a:hover,.popular-feeds .feed-desc .time i,.contact-area .top-content h3 span,.single-faq-box i,.error-inner .error-top i,.f-links li a:hover i,.p-widget-title,.project-info li i,.f-links li a:hover,.widget-post .post-content h4:hover a,.widget-post .post-date i,.theme-btn:hover,.success .mail h2 span,.testimonial-social li a:hover,.copyright .copyright-text p a:hover,.post-author-box .author-social li a:hover,.slicknav_nav li a:hover{
+	color:#6a89cc;
+}
+.breadcrumbs-content h2::before,.hero-area .promo-video .waves-block .waves,.header .navigation li a::before,.hero-area .hero-content span,.hero-area .video-main .video:hover,.hero-area .owl-theme .owl-dots .owl-dot:hover span,
+.hero-area .owl-theme .owl-dots .owl-dot.active span,.about-area::before,.single-service .service-bottom a,.project-nav li.active,.portfolio-area .project-nav li:hover,.project-nav li.active,.portfolio-single .p-button,.single-team .team-bottom,.single-team .team-social,.testimonial-area .line-bot,.testimonial-area .owl-carousel .owl-controls .owl-dot.active span,
+.testimonial-area .owl-carousel .owl-controls .owl-dot:hover span,.single-pricing:hover .pricing-bottom .theme-btn,.pricing-area .single-pricing.active .pricing-head,.single-pricing:hover .pricing-bottom .theme-btn,
+.single-pricing.active .pricing-bottom .theme-btn,.fun-fact .single-count i,.single-blog .blog-img .date,.blog-area .owl-carousel .owl-nav div,.blog-post-tag .post-tag li a:hover,.blog-post-tag .blog-share li a:hover,.prev-next-btn ul li,.single-comments .body .reply:hover,.widget .widget-title::before,.widget-search form button,.categories-widget ul li a:hover,.socail-widget ul li a:hover,.popular-tag-widget ul li a:hover,.client-area .owl-controls .owl-nav div,.single-faq-box.active,.single-faq-box:hover,.faq-inner .faq-title a,.bonik-pagination li.active a, .bonik-pagination li:hover a,.f-contact-box .box-icon i,.contact-bottom li a i,.theme-btn,.theme-btn.primary:hover,.section-title h6::before,.section-title .line-bot::before,.p-tags li a:hover,.header .nav-menu li .sub-menu li a:hover,#scrollUp,.sk-cube-grid .sk-cube,.single-service .number::before{
+	background-color:#6a89cc;
+}
+.hero-area .owl-theme .owl-dots .owl-dot span,.single-service:hover .service-img,.testimonial-item .testimonial-head img,.post-author-box .author img,.single-comments .head img,.comment-list .head img,.blog-c-form .form-group input:hover,
+.blog-c-form .form-group textarea:hover,.theme-btn:hover,.single-service .number h6{
+	border-color:#6a89cc;
+}
+.header .nav-menu li .sub-menu{
+	border-top-color: #6a89cc;
+}
+.widget::before{
+	border-color: #6a89cc;
+}
+.f-contact-box .box-icon::before{
+	border-left-color:#6a89cc;
+}
