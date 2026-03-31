@@ -46,6 +46,7 @@
         <meta property="og:image" content="{{asset('assets/img/logo.png')}}">
         <meta name="twitter:image" content="{{asset('assets/img/logo.png')}}">
     @endif
+	
          @livewireStyles
     </head>
     <body>
@@ -72,6 +73,7 @@
 		<script src="{{asset('assets/js/jquery.scrollUp.min.js')}}"></script>
 		<script src="{{asset('assets/js/main.js')}}"></script>
 		<!-- End Jquery Plugin JS -->
+		  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
          @livewireScripts
     </body>
 </html>

@@ -24,5 +24,9 @@ class Formation extends Model
         'start_date',
         'end_date'
     ];
+    public function inscriptions()
+    {
+        return $this->hasMany(InscriptionFormation::class);
+    }
 
 }

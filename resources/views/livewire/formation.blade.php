@@ -111,7 +111,7 @@
 															<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 															<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 														</ul> --}}
-														<a href=""> <button class="btn btn-sm btn-outline-primary border-11" ><i class="fa fa-file"></i> S'inscrire</button></a>
+														<a href="{{ route('inscription-formation', $formation->slug) }}"> <button class="btn btn-sm btn-outline-primary border-11" ><i class="fa fa-file"></i> S'inscrire</button></a>
 														<button class="btn btn-sm btn-outline-primary border-11" 
         id="shareBtn"
         data-title="{{ $formation->title }}" 
