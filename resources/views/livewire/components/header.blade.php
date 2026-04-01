@@ -77,13 +77,20 @@
 													</div>
 												</div>
 											</div>
+
 											<!-- Menu-Right -->
+										
+												
 											<div class="menu-right">
 												<a href="contact.html" class="theme-btn">Inscrivez-vous</a>
 											</div>
+											<div class="logo ">
+											<a class="logo-1" href="{{ route('home') }}"><img height="50" width="50" src="{{asset('storage/'. $enterprise->logo2)}}" alt="{{ $enterprise->name }}"></a>
+										</div>
 											<!-- End-Menu-Right -->
 										</div>
 									</div>
+									
 								</div>	
 							</div>	
 						</div>	

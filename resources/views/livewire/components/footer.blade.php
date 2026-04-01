@@ -48,43 +48,34 @@
 							</div>
 							<!-- End Single Widget -->
 						</div>
+						<div class="col-lg-3 col-md-6 col-12">
+							<div class="single-widget footer-about">
+								<div class="footer-logo">
+									<a class="logo" href="#">
+										<img src="{{asset('storage/'. $enterprise->logo2 ?? 'default-logo.png')}}" alt="{{ $enterprise->name ?? 'Enterprise Name' }}">
+									</a>
+								</div>
+								
+								<!-- Quick Link Box -->	
+								
+							</div>
+						</div>
 						<div class="col-lg-2 col-md-6 col-12">
 							<!-- Quick Links -->
 							<div class="single-widget f-links">
 								<h3 class="widget-title">Liens rapides</h3>
 								<ul>
 									<li><a href="{{ route('home') }}"><i class="fa fa-angle-double-right"></i>Accueil</a></li>
-									
+									<li><a href=""><i class="fa fa-angle-double-right"></i>À propos</a></li>
+									<li><a href="{{ route('produits') }}"><i class="fa fa-angle-double-right"></i>Nos produits</a></li>
+									<li><a href=""><i class="fa fa-angle-double-right"></i>Contact</a></li>
 								</ul>
 							</div>
 						</div>
 						<!-- Single-Widget -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<!-- Latest Post -->
-							<div class="single-widget">
-								<h3 class="widget-title">Dernières événements</h3>
-								{{-- <div class="widget-post">
-									<div class="post-img">
-										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-									</div>
-									<div class="post-content">
-										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
-										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
-									</div>
-								</div>
-								<div class="widget-post">
-									<div class="post-img">
-										<a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a>
-									</div>
-									<div class="post-content">
-										<h4><a href="#">Define World Best IT Solution Technology</a></h4>
-										<span class="post-date"><i class="fa fa-clock-o"></i>24th March 2020</span>
-									</div>
-								</div> --}}
-							</div>
-						</div>
+						
 						<!-- Single-Widget -->
-						<div class="col-lg-3 col-md-6 col-12">
+						<div class="col-lg-4 col-md-6 col-12">
 							<div class="single-widget">
 								<h3 class="widget-title">Contact</h3>
 								<!-- Footer Contact -->
