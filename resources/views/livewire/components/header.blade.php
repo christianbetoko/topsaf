@@ -60,7 +60,7 @@
                                                                            
 																</ul>
 															
-                                                            <li><a href="services.html">Nos produits premium</a></li>
+                                                            <li class="{{request()->routeIs('produits') ? 'active' : ''}}"><a href="{{ route('produits') }}">Nos produits premium</a></li>
                                                           
                                                              <li><a href="services.html">Revivez nos événements</a></li>
                                                           
