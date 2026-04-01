@@ -79,7 +79,7 @@
 
 															
 															
-															<li><a href="contact.html">Contact</a></li>
+															<li class="{{request()->routeIs('contact') ? 'active' : ''}}"><a href="{{ route('contact') }}">Contact</a></li>
 														</ul>
 													</div>
 												</div>

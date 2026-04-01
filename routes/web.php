@@ -13,6 +13,7 @@ use App\Livewire\Produits;
 use App\Livewire\Apropos;
 use App\Livewire\NosAdresses;
 use App\Livewire\Produit;
+use App\Livewire\Contact;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,7 @@ use App\Livewire\Produit;
 Route::get('/', Home::class)->name('home');
 Route::get('/historique', History::class)->name('history');
 Route::get('/apropos', Apropos::class)->name('about');
+Route::get('/contact', Contact::class)->name('contact');
 Route::get('/nos-adresses', NosAdresses::class)->name('nos-adresses');
 Route::get('/formations', Formations::class)->name('formations');
 Route::get('/conferences', Conferences::class)->name('conferences');
