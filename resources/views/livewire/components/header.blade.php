@@ -54,11 +54,11 @@
 														<ul class="nav-menu mobile-menu navigation">
 
 															<li class="{{request()->routeIs('home') ? 'active' : ''}}"><a href="{{ route('home')}}">Accueil</a></li>
-                                                             <li class="{{request()->routeIs('history') ? 'active' : ''}}"><a href="#">A propos<i class="fa fa-angle-down"></i></a>
+                                                             <li class="{{request()->routeIs('about') ? 'active' : ''}}"><a href="{{ route('about') }}">A propos<i class="fa fa-angle-down"></i></a>
 																<ul class="sub-menu">
 																	
 																	<li class="{{request()->routeIs('history') ? 'active' : ''}}"><a href="{{ route('history') }}">Historique</a></li>
-                                                                           <li><a href="services.html">Nos adresses</a></li>
+                                                                           <li class="{{request()->routeIs('nos-adresses') ? 'active' : ''}}"><a href="{{ route('nos-adresses') }}">Nos adresses</a></li>
 																	
 																</ul>
 															</li> 
