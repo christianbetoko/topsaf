@@ -14,8 +14,10 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignId('category_product_id')->constrained()->onDelete('cascade');
-
+           // La solution est ici :
+        $table->foreignId('category_product_id')
+              ->constrained('category_products') // Lie automatiquement à la table category_products
+              ->onDelete('cascade'); // Supprime les produits si la catégorie est supprimée
             $table->string('slug',191)->unique();
             $table->json('images')->nullable();
             $table->text('description')->nullable();
