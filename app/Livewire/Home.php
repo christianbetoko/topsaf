@@ -5,6 +5,7 @@ use Carbon\Carbon;
 use Livewire\Component;
 use Livewire\Attributes\Title;
 use App\Models\Slide;
+use App\Models\Temoignage;
 #[Title('Accueil - TOP SANTÉ FUKANG')]
 class Home extends Component
 {
@@ -12,8 +13,9 @@ class Home extends Component
     {
         Carbon::setLocale('fr');
          $slides = Slide::where('is_active', true)->get();
+         $temoignages = Temoignage::where('is_active', true)->get();
          
-         return view('livewire.home', compact('slides'));   
+         return view('livewire.home', compact('slides', 'temoignages'));   
       
     }
 }

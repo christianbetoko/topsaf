@@ -1,6 +1,6 @@
 <div>
    <!-- Breadcrumbs -->
-		<div class="breadcrumbs" style="background-image:url('https://via.placeholder.com/1600x500')">
+		<div class="breadcrumbs" style="background-image:url('{{asset('assets/img/footer-bg.jpg')}}')">
 			<div class="container">
 				<div class="row">
 					<!-- Breadcrumbs-Content -->

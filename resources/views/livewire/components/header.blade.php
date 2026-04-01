@@ -43,13 +43,16 @@
 												<div class="navbar">
 													<div class="nav-item">
 														<!-- Main-Menu -->
+
 														<ul class="nav-menu mobile-menu navigation">
-                                                             <li class="{{request()->routeIs('home') ? 'active' : ''}}"><a href="{{ route('home') }}">Accueil<i class="fa fa-angle-down"></i></a>
+
+															<li class="{{request()->routeIs('home') ? 'active' : ''}}"><a href="{{ route('home')}}">Accueil</a></li>
+                                                             <li class="{{request()->routeIs('history') ? 'active' : ''}}"><a href="#">A propos<i class="fa fa-angle-down"></i></a>
 																<ul class="sub-menu">
 																	
 																	<li class="{{request()->routeIs('history') ? 'active' : ''}}"><a href="{{ route('history') }}">Historique</a></li>
                                                                            <li><a href="services.html">Nos adresses</a></li>
-																	<li><a href="portfolio-single.html">Témoignages</a></li>
+																	
 																</ul>
 															</li> 
 															
@@ -57,12 +60,13 @@
 																<ul class="sub-menu">
 																	<li class="{{request()->routeIs('formations') ? 'active' : ''}}"><a href="{{route('formations')}}">Nos programmes de formation régulière</a></li>
 																	<li class="{{request()->routeIs('conferences') ? 'active' : ''}}"><a href="{{ route('conferences') }}">Nos conférences & BBS</a></li>
+																	 <li><a href="services.html">Revivez nos événements</a></li>
                                                                            
 																</ul>
 															
                                                             <li class="{{request()->routeIs('produits') ? 'active' : ''}}"><a href="{{ route('produits') }}">Nos produits premium</a></li>
                                                           
-                                                             <li><a href="services.html">Revivez nos événements</a></li>
+                                                            
                                                           
                                                       
 
