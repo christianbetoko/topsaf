@@ -41,7 +41,7 @@
 								<h3><a href="https://www.google.com/maps/search/?api=1&query={{ $address->latitude }},{{ $address->longitude }}" target="_blank">{{ $address->name }}</a></h3>
 								<div class="blog-meta">
 									<div class="single-meta">
-										
+										<p>{{ $address->address }} <br> {{ $address->city }}, {{ $address->country }}</p>
 										
 									</div>
 									<div class="single-meta">
