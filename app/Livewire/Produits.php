@@ -6,7 +6,9 @@ use App\Models\Product;
 use App\Models\CategoryProduct;
 use Livewire\Component;
 use Livewire\WithPagination;
+use Livewire\Attributes\Title;
 
+#[Title('Produits - TOP SANTÉ FUKANG')]
 class Produits extends Component
 {
     use WithPagination;
