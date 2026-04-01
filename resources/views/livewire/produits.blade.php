@@ -12,7 +12,7 @@
                     <div class="breadcrumbs-menu">
                         <ul>
                             <li><a href="{{ route('home') }}">Accueil</a><i class="fa fa-angle-double-right"></i></li>
-                            <li class="active">Nos produits premium</li>
+                           <li class="active"><a href="{{ route('produits') }}">Nos produits premium</a></li>
                         </ul>
                     </div>
                 </div>
