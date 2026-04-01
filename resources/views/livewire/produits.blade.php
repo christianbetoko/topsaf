@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="portfolio-main">
-                        <div id="portfolio-item" class="row">
+                        <div id="portfolio-item-livewire" class="row">
                             @forelse($products as $product)
                                 @php
                                     // On récupère la première image ou une image par défaut
@@ -100,7 +100,7 @@
     </section>
 </div>
 
-<script>
+{{-- <script>
     document.addEventListener('livewire:navigated', () => { 
         // Force l'affichage si le JS du template fait défaut
         const items = document.querySelectorAll('.portfolio-single');
@@ -109,4 +109,4 @@
             item.style.visibility = 'visible';
         });
     });
-</script>
+</script> --}}
