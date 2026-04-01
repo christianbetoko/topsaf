@@ -104,13 +104,7 @@
 												</div>
 												<div class="col-lg-4 col-md-4 col-12">
 													<div class="blog-share share-tag">
-														{{-- <h5>Share No</h5>
-															<ul>
-															<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-															<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-															<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-															<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-														</ul> --}}
+														
 														<a href="{{ route('inscription-formation', $formation->slug) }}"> <button class="btn btn-sm btn-outline-primary border-11" ><i class="fa fa-file"></i> S'inscrire</button></a>
 														<button class="btn btn-sm btn-outline-primary border-11" 
         id="shareBtn"
