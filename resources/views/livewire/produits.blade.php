@@ -99,3 +99,14 @@
         </div>
     </section>
 </div>
+
+<script>
+    document.addEventListener('livewire:navigated', () => { 
+        // Force l'affichage si le JS du template fait défaut
+        const items = document.querySelectorAll('.portfolio-single');
+        items.forEach(item => {
+            item.style.opacity = '1';
+            item.style.visibility = 'visible';
+        });
+    });
+</script>

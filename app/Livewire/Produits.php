@@ -14,6 +14,10 @@ class Produits extends Component
     use WithPagination;
 
     public $activeCategory = '*'; // Filtre par défaut (Tous)
+    public function mount()
+{
+    $this->activeCategory = '*'; // Force l'état initial
+}
 
     /**
      * Change la catégorie active et réinitialise la pagination
