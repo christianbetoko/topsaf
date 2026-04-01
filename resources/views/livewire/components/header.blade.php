@@ -29,7 +29,7 @@
 						<div class="header-inner-top">
 							<div class="header-inner">
 								<div class="row">
-									<div class="col-lg-2 col-md-3 col-12 d-flex align-items-center">
+									<div class="col-lg-2 col-md-3 col-12 ">
     <div class="logo-container d-flex align-items-center">
         <div class="logo mr-2"> {{-- mr-2 pour un petit espace entre les deux --}}
             <a class="logo-1" href="{{ route('home') }}">
