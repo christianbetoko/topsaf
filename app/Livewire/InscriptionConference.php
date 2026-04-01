@@ -1,13 +1,16 @@
 <?php
 
 namespace App\Livewire;
+
+namespace App\Livewire;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 use Carbon\Carbon;
-use App\Models\Formation;
+use App\Models\Conference;
  use Jantinnerezo\LivewireAlert\Facades\LivewireAlert;
-#[Title('Inscription - Formation - TOP SANTÉ FUKANG')]
-class InscriptionFormation extends Component
+#[Title('Inscription - Conférence - TOP SANTÉ FUKANG')]
+
+class InscriptionConference extends Component
 {
     public $slug;
 
@@ -17,43 +20,42 @@ class InscriptionFormation extends Component
        
         $this->slug = $slug;
     }
-public $nom;
-public $prenom;
-public $postnom;
-public $sexe;
-public $date_naissance;
-public $email;
-public $telephone;
-public $adresse;
 
+    public $prenom;
+    public $nom;
+    public $postnom;
+    public $sexe;
+    public $email;
+    public $telephone;
+    public $adresse;
+    public $code_parrain;
 
-protected $rules=[
+    protected $rules=[
     'nom'=>'required|string|max:255',
     'prenom'=>'required|string|max:255',
     'postnom'=>'nullable|string|max:255',
     'sexe'=>'required|in:Masculin,Féminin',
-    'date_naissance'=>'nullable|date',
+    
     'email'=>'required|email|unique:inscription_formations,email',
     'telephone'=>'required|string|max:20|unique:inscription_formations,telephone',
     'adresse'=>'required|string|max:255',
+    'code_parrain'=>'nullable|string|max:255',
 ];
 public function submitForm(){
     $this->validate();
-    $formation=Formation::where('slug',$this->slug)->firstOrFail();
-    $formation->inscriptions()->create([
-        'nom'=>$this->nom,
+    $conference=Conference::where('slug',$this->slug)->firstOrFail();
+    $conference->inscriptions()->create([
         'prenom'=>$this->prenom,
+        'nom'=>$this->nom,
         'postnom'=>$this->postnom,
         'sexe'=>$this->sexe,
-        'date_naissance'=>$this->date_naissance,
         'email'=>$this->email,
         'telephone'=>$this->telephone,
         'adresse'=>$this->adresse,
+        'code_parrain'=>$this->code_parrain,
     ]);
-   
-$this->reset(['nom','prenom','postnom','sexe','date_naissance','email','telephone','adresse']);
-    
- LivewireAlert::title('Informations envoyés avec succès')
+    $this->reset(['prenom','nom','postnom','sexe','email','telephone','adresse','code_parrain']);
+    LivewireAlert::title('Informations envoyés avec succès')
         ->success()
         ->withOptions([
             'background' => '#E8F5E9', // Couleur de fond vert très clair (exemple)
@@ -67,14 +69,12 @@ $this->reset(['nom','prenom','postnom','sexe','date_naissance','email','telephon
         ])
 
         ->show();
-
-
 }
 
     public function render()
     {
-         Carbon::setLocale('fr');
-          $formation=Formation::where('slug',$this->slug)->firstOrFail();
-        return view('livewire.inscription-formation', compact('formation'));
+        Carbon::setLocale('fr');
+          $conference=Conference::where('slug',$this->slug)->firstOrFail();
+        return view('livewire.inscription-conference', compact('conference'));
     }
 }

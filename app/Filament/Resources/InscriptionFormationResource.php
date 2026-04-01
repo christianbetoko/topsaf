@@ -15,7 +15,7 @@ class InscriptionFormationResource extends Resource
 {
     protected static ?string $model = InscriptionFormation::class;
     protected static ?string $navigationIcon = 'heroicon-o-identification';
-    protected static ?string $modelLabel = 'Inscription';
+    protected static ?string $modelLabel = 'Inscriptions-Formations';
 
     public static function form(Form $form): Form
     {

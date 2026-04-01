@@ -56,7 +56,7 @@
 														 <li><a href="#">Activités<i class="fa fa-angle-down"></i></a>
 																<ul class="sub-menu">
 																	<li class="{{request()->routeIs('formations') ? 'active' : ''}}"><a href="{{route('formations')}}">Nos programmes de formation régulière</a></li>
-																	<li><a href="portfolio-single.html">Nos conférences & BBS</a></li>
+																	<li class="{{request()->routeIs('conferences') ? 'active' : ''}}"><a href="{{ route('conferences') }}">Nos conférences & BBS</a></li>
                                                                            
 																</ul>
 															
