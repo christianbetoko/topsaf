@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Stat extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'value',
+        'is_active',
+    ];
+    protected $casts = [
+        'is_active' => 'boolean',
+    ];
 }

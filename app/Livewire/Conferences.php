@@ -15,7 +15,7 @@ class Conferences extends Component
       protected $paginationTheme = 'bootstrap';
     public function render()
     {
-         $paginate=4;
+         $paginate=6;
             Carbon::setLocale('fr');
            $conferences = Conference::where('is_active', true)
             ->where('_date', '>=', now()->toDateString()) // Filtre : Date aujourd'hui ou dans le futur

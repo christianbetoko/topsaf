@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('slug',191)->unique();
+            $table->text('description')->nullable();
+            $table->string('video_url')->nullable();
+               $table->json('images')->nullable();
+               $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@ class Formations extends Component
       protected $paginationTheme = 'bootstrap';
     public function render()
     {
-         $paginate=4;
+         $paginate=6;
          Carbon::setLocale('fr');
          $formations=Formation::orderBy('title','ASC')->where('is_active',true)->paginate($paginate);
         return view('livewire.formations',compact('formations'));
