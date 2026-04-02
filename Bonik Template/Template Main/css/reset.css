@@ -212,7 +212,7 @@ input:-webkit-autofill:focus {
 	border-radius: 3px;
 }
 #scrollUp:hover{
-	background: #26313C;
+	background: #0093dd;
 	box-shadow: none;
 }
 #scrollUp i {

@@ -393,7 +393,7 @@ Version: 1.0.0
 ========================================*/ 
 .about-area {
 	padding: 100px 0px;
-	background: #26313C;
+	background: #0093dd;
 	position: relative;
 	overflow: hidden;
 }
@@ -640,7 +640,7 @@ Version: 1.0.0
 	display: inline-block;
 }
 .single-service .service-bottom a:hover{
-	background:#26313C;
+	background:#0093dd;
 	color:#fff;
 }
 /* Service Archive */
@@ -815,7 +815,7 @@ Version: 1.0.0
 }
 .portfolio-single .p-button:hover{
 	background:#fff;
-	color:#26313C;
+	color:#0093dd;
 }
 
 /* Portfolio Single CSS */ 
@@ -1070,7 +1070,7 @@ Version: 1.0.0
 	background-attachment: fixed;
 }
 .testimonial-main {
-	background: #26313C;
+	background: #0093dd;
 	padding: 50px 0;
 }
 .testimonial-item {
@@ -1209,7 +1209,7 @@ Version: 1.0.0
 	text-transform: uppercase;
 	font-size: 12px;
 	color: #fff;
-	background: #26313C;
+	background: #0093dd;
 	padding: 8px 47px;
 	position: absolute;
 	top: 11px;
@@ -1234,7 +1234,7 @@ Version: 1.0.0
 }
 .pricing-area .single-pricing .pricing-head {
     text-align: center;
-    background: #26313C;
+    background: #0093dd;
     padding: 20px 0px;
 } 
 .pricing-area .single-pricing .pricing-head h4 {
@@ -1298,7 +1298,7 @@ Version: 1.0.0
 .cta-section {
 	padding: 80px 0px 155px 0px;
 	position: relative;
-	background: #26313C;
+	background: #0093dd;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -1523,7 +1523,7 @@ Version: 1.0.0
 }
 .blog-area .owl-carousel  .owl-nav div:hover{
 	color:#fff;
-	background:#26313C;
+	background:#0093dd;
 }
 .blog-area .owl-carousel .owl-nav .owl-prev {
 	left: -70px;
@@ -1571,7 +1571,7 @@ Version: 1.0.0
 	margin:0;
 }
 .single-content blockquote {
-	background: #26313C;
+	background: #0093dd;
 	padding: 30px;
 	margin-bottom: 20px;
 }
@@ -1675,7 +1675,7 @@ Version: 1.0.0
 	color: #fff;
 }
 .prev-next-btn li:hover{
-	background:#26313C;
+	background:#0093dd;
 }
 .prev-next-btn li.prev i {
 	margin: 0px;
@@ -1931,7 +1931,7 @@ Version: 1.0.0
 	cursor: pointer;
 }
 .widget-search form button:hover {
-	background-color:#26313C;
+	background-color:#0093dd;
 	color: #fff;
 }
 .popular-feeds .single-popular-feed {
@@ -2004,7 +2004,7 @@ Version: 1.0.0
 }
 
 .categories-widget ul li a:hover span {
-	background-color: #26313C;
+	background-color: #0093dd;
 	color: #fff;
 }
 .socail-widget ul li {
@@ -2365,7 +2365,7 @@ Version: 1.0.0
 }
 .faq-inner .panel .faq-title a.collapsed {
 	color: #fff;
-	background: #26313C;
+	background: #0093dd;
 	text-decoration: none;
 	border-color: transparent;
 }
@@ -2380,7 +2380,7 @@ Version: 1.0.0
 .faq-inner .panel .faq-title span {
 	margin-right: 15px;
 	background: #fff;
-	color: #26313C;
+	color: #0093dd;
 	font-weight: 600;
 	border-radius: 100%;
 	width: 28px;
@@ -2487,7 +2487,7 @@ Version: 1.0.0
 	content: "";
 	width: 100%;
 	height: 100%;
-	background: #26313cbd;
+	background: #0093ddbd;
 	left: 0;
 	top: 0;
 }
