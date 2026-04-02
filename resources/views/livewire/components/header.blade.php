@@ -88,9 +88,9 @@
 											<!-- Menu-Right -->
 										
 												
-											<div class="menu-right">
+											{{-- <div class="menu-right">
 												<a href="contact.html" class="theme-btn">Inscrivez-vous</a>
-											</div>
+											</div> --}}
 											
 											<!-- End-Menu-Right -->
 										</div>
