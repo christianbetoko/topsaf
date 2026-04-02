@@ -67,7 +67,7 @@
 																<ul class="sub-menu">
 																	<li class="{{request()->routeIs('formations') ? 'active' : ''}}"><a href="{{route('formations')}}">Nos programmes de formation régulière</a></li>
 																	<li class="{{request()->routeIs('conferences') ? 'active' : ''}}"><a href="{{ route('conferences') }}">Nos conférences & BBS</a></li>
-																	 <li><a href="services.html">Revivez nos événements</a></li>
+																	 <li  class="{{request()->routeIs('evenements') ? 'active' : ''}}"><a href="{{ route('evenements') }}">Revivez nos événements</a></li>
                                                                            
 																</ul>
 															

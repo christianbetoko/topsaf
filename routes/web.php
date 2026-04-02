@@ -14,6 +14,8 @@ use App\Livewire\Apropos;
 use App\Livewire\NosAdresses;
 use App\Livewire\Produit;
 use App\Livewire\Contact;
+use App\Livewire\Evenements;
+use App\Livewire\Evenement;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +35,8 @@ Route::get('/contact', Contact::class)->name('contact');
 Route::get('/nos-adresses', NosAdresses::class)->name('nos-adresses');
 Route::get('/formations', Formations::class)->name('formations');
 Route::get('/conferences', Conferences::class)->name('conferences');
+Route::get('/evenements', Evenements::class)->name('evenements');
+Route::get('/evenement/{slug}', Evenement::class)->name('evenement');
 Route::get('/conference/{slug}', SingleConference::class)->name('conference');
 Route::get('/produits', Produits::class)->name('produits');
 Route::get('/produit/{slug}', Produit::class)->name('produit');
