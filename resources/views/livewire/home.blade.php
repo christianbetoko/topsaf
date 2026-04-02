@@ -46,7 +46,81 @@
 				
 			</div>
 		</section>
+	<section class="cta-section" style="background-image:url(https://via.placeholder.com/1600x450)">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-12">
+						<div class="cta-content">
+							<h3>Bienvenue sur le site web de TOP SANTE FUKANG!</h3>
+							<p>{{$enterprise->about}}</p>
+							<div class="cta-button">
+								<a href="{{route('contact')}}" class="theme-btn">Nous contacter</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- End Hero Area -->
+				<!-- Fun Fact -->
+		<div class="fun-fact">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="count-box">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-12">
+									<!-- Single count -->
+									<div class="single-count">
+										<i class="fa fa-users"></i>
+										<div class="main-count">
+											<h3>{{ $stats->first()->name ?? 'Pays' }}</h3>
+											<h6><span class="counter">{{ $stats->first()->value ?? 50 }}</span>+</h6>
+										</div>
+									</div>
+									<!-- End Single count -->
+								</div>
+								<div class="col-lg-3 col-md-3 col-12">
+									<!-- Single count -->
+									<div class="single-count">
+										<i class="fa fa-shopping-cart"></i>
+										<div class="main-count">
+											<h3>{{ $stats->skip(1)->first()->name ?? 'Clients' }}</h3>
+											<h6><span class="counter">{{ $stats->skip(1)->first()->value ?? 110 }}</span>+</h6>
+										</div>
+									</div>
+									<!-- End Single count -->
+								</div>
+								<div class="col-lg-3 col-md-3 col-12">
+									<!-- Single count -->
+									<div class="single-count">
+										<i class="fa fa-book"></i>
+										<div class="main-count">
+											<h3>{{ $stats->skip(2)->first()->name ?? 'Projects' }}</h3>
+											<h6><span class="counter">{{ $stats->skip(2)->first()->value ?? 260 }}</span>+</h6>
+										</div>
+									</div>
+									<!-- End Single count -->
+								</div>
+								<div class="col-lg-3 col-md-3 col-12">
+									<!-- Single count -->
+									<div class="single-count last">
+										<i class="fa fa-calendar-check-o"></i>
+										<div class="main-count">
+											<h3>{{ $stats->skip(3)->first()->name ?? 'Support' }}</h3>
+											<h6><span class="counter">{{ $stats->skip(3)->first()->value ?? 20 }}</span>+</h6>
+										</div>
+									</div>
+									<!-- End Single count -->
+								</div>
+								<!-- End-Single-Count -->
+							</div>																									
+						</div>																									
+					</div>																									
+				</div>																									
+			</div>
+		</div>
+		<!-- End Fun Fact -->
 		<!-- Testimonial-Area -->
 		<section class="testimonial-area">
 			<div class="testimonial-bg" style='background-image: url("{{asset('assets/img/footer-bg.jpg')}}")'>

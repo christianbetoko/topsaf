@@ -934,8 +934,8 @@
 									<div class="single-count">
 										<i class="fa fa-globe"></i>
 										<div class="main-count">
-											<h3>Countries</h3>
-											<h6><span class="counter">50</span>+</h6>
+											<h3>{{ $stats->first()->name ?? 'Pays' }}</h3>
+											<h6><span class="counter">{{ $stats->first()->value ?? 50 }}</span>+</h6>
 										</div>
 									</div>
 									<!-- End Single count -->
@@ -945,8 +945,8 @@
 									<div class="single-count">
 										<i class="fa fa-user-circle"></i>
 										<div class="main-count">
-											<h3>Clients</h3>
-											<h6><span class="counter">110</span>+</h6>
+											<h3>{{ $stats->skip(1)->first()->name ?? 'Clients' }}</h3>
+											<h6><span class="counter">{{ $stats->skip(1)->first()->value ?? 110 }}</span>+</h6>
 										</div>
 									</div>
 									<!-- End Single count -->
@@ -956,8 +956,8 @@
 									<div class="single-count">
 										<i class="fa fa-briefcase"></i>
 										<div class="main-count">
-											<h3>Projects</h3>
-											<h6><span class="counter">260</span>+</h6>
+											<h3>{{ $stats->skip(2)->first()->name ?? 'Projects' }}</h3>
+											<h6><span class="counter">{{ $stats->skip(2)->first()->value ?? 260 }}</span>+</h6>
 										</div>
 									</div>
 									<!-- End Single count -->
@@ -967,8 +967,8 @@
 									<div class="single-count last">
 										<i class="fa fa-headphones"></i>
 										<div class="main-count">
-											<h3>Team members</h3>
-											<h6><span class="counter">20</span>+</h6>
+											<h3>{{ $stats->skip(3)->first()->name ?? 'Support' }}</h3>
+											<h6><span class="counter">{{ $stats->skip(3)->first()->value ?? 20 }}</span>+</h6>
 										</div>
 									</div>
 									<!-- End Single count -->
