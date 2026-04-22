@@ -19,14 +19,14 @@
                                     <div class="nav-item">
                                         <ul class="nav-menu mobile-menu navigation d-flex justify-content-center">
                                             <li class="{{request()->routeIs('home') ? 'active' : ''}}"><a href="{{ route('home')}}">Accueil</a></li>
-                                            <li class="{{request()->routeIs('about') ? 'active' : ''}}"><a href="{{ route('about') }}">A propos <i class="fa fa-angle-down"></i></a>
+                                            <li ><a href="#">A propos <i class="fa fa-angle-down"></i></a>
                                                 <ul class="sub-menu">
                                                     <li class="{{request()->routeIs('history') ? 'active' : ''}}"><a href="{{ route('history') }}">Historique</a></li>
                                                     <li class="{{request()->routeIs('nos-adresses') ? 'active' : ''}}"><a href="{{ route('nos-adresses') }}">Nos adresses</a></li>
 													<li class="{{request()->routeIs('testimolnials') ? 'active' : ''}}"><a href="{{ route('testimolnials') }}">Témoignages</a></li>
                                                 </ul>
                                             </li> 
-                                            <li "><a href="#">Activités <i class="fa fa-angle-down"></i></a>
+                                            <li ><a href="#">Activités <i class="fa fa-angle-down"></i></a>
                                                 <ul class="sub-menu">
                                                     <li class="{{request()->routeIs('formations') ? 'active' : ''}}"><a href="{{route('formations')}}">Nos programmes</a></li>
                                                     <li class="{{request()->routeIs('conferences') ? 'active' : ''}}"><a href="{{ route('conferences') }}">Nos conférences</a></li>
