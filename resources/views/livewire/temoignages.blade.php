@@ -13,7 +13,7 @@
                     <div class="breadcrumbs-menu">
                         <ul>
                             <li><a href="{{ route('home') }}">Accueil</a><i class="fa fa-angle-double-right"></i></li>
-                            <li class="active"><a href="{{ route('temoignages') }}">Témoignages</a></li>
+                            <li class="active"><a href="{{ route('testimolnials') }}">Témoignages</a></li>
                         </ul>
                     </div>	
                 </div>
