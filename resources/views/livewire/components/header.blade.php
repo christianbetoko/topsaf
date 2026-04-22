@@ -34,7 +34,7 @@
                                                 </ul>
                                             </li>
                                             <li class="{{request()->routeIs('produits') ? 'active' : ''}}"><a href="{{ route('produits') }}">Nos produits</a></li>
-											<li class="{{request()->routeIs('testimolnials') ? 'active' : ''}}"><a href="{{ route('testimolnials') }}">Témoignages</a></li>
+											<li class=""><a href="">Témoignages</a></li>
                                             <li class="{{request()->routeIs('contact') ? 'active' : ''}}"><a href="{{ route('contact') }}">Contact</a></li>
                                         </ul>
                                     </div>
