@@ -30,9 +30,11 @@
                                                     <li><a href="{{route('formations')}}">Nos programmes</a></li>
                                                     <li><a href="{{ route('conferences') }}">Nos conférences</a></li>
                                                     <li><a href="{{ route('evenements') }}">Événements</a></li>
+                                                    
                                                 </ul>
                                             </li>
                                             <li class="{{request()->routeIs('produits') ? 'active' : ''}}"><a href="{{ route('produits') }}">Nos produits</a></li>
+											<li class="{{request()->routeIs('temoignages') ? 'active' : ''}}"><a href="{{ route('temoignages') }}">Témoignages</a></li>
                                             <li class="{{request()->routeIs('contact') ? 'active' : ''}}"><a href="{{ route('contact') }}">Contact</a></li>
                                         </ul>
                                     </div>

@@ -23,6 +23,7 @@ class Temoignage extends Model
 
 
         'content',
+        'youtube_url',
 
         'image',
         'is_active',

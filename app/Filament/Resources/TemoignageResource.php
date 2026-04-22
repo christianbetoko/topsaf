@@ -50,6 +50,8 @@ class TemoignageResource extends Resource
                                     ->label('Le témoignage')
                                     ->rows(5)
                                     ->columnSpanFull(),
+                                    Forms\Components\TextInput::make('youtube_url')
+                                    ->label('Lien YouTube (Optional)'),
                             ])->columns(2),
 
                         Forms\Components\Section::make('Réseaux Sociaux & Liens')
