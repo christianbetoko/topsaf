@@ -33,7 +33,7 @@ Route::get('/', Home::class)->name('home');
 Route::get('/historique', History::class)->name('history');
 Route::get('/apropos', Apropos::class)->name('about');
 Route::get('/contact', Contact::class)->name('contact');
-Route::get('/temoignages', Temoignages::class)->name('temoignages');
+Route::get('/temoignages', Temoignages::class)->name('testimolnials');
 Route::get('/nos-adresses', NosAdresses::class)->name('nos-adresses');
 Route::get('/formations', Formations::class)->name('formations');
 Route::get('/conferences', Conferences::class)->name('conferences');
