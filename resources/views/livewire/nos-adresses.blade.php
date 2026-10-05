@@ -34,11 +34,15 @@
 <div class="col-lg-4 col-md-6 col-12">
 						<!-- Single Blog -->
 						<div class="single-blog">
-							
+							@if($address->image)
 							<div class="blog-img">
 								<img src="{{ asset('storage/' . $address->image) }}" alt="{{ $address->name }}">
 															</div>
-							
+							@else
+							<div class="blog-img">
+								<img src="{{ asset('storage/' . $enterprise->logo) }}" alt="{{ $address->name }}">
+															</div>
+							@endif
 							<div class="blog-body">
 								<h3><a href="https://www.google.com/maps/search/?api=1&query={{ $address->latitude }},{{ $address->longitude }}" target="_blank">{{ $address->name }}</a></h3>
 								<div class="blog-meta">

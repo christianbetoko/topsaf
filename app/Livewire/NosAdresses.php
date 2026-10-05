@@ -5,6 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use Livewire\Attributes\Title;
 use Carbon\Carbon;
+use App\Models\Enterprise;
 use App\Models\Address;
 #[Title('Nos adresses - TOP SANTÉ FUKANG')]
 class NosAdresses extends Component
@@ -13,6 +14,7 @@ class NosAdresses extends Component
     {
          Carbon::setLocale('fr');
          $addresses = Address::where('is_active', true)->get();
-        return view('livewire.nos-adresses', compact('addresses'));
+         $enterprise = Enterprise::first();
+        return view('livewire.nos-adresses', compact('addresses', 'enterprise'));
     }
 }
