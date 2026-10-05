@@ -1,30 +1,30 @@
 <div>
-    	  <!-- Breadcrumbs -->
-		<div class="breadcrumbs" style="background-image:url('{{asset('assets/img/footer-bg.jpg')}}')">
-			<div class="container">
-				<div class="row">
-					<!-- Breadcrumbs-Content -->
-					<div class="col-lg-7 col-md-7 col-12">
-						<div class="breadcrumbs-content">
-							<h2>Nous contacter</h2>
-							<p>Contactez-nous pour plus d'informations</p>	
-						</div>
-					</div>
-					<!-- Breadcrumbs-Menu -->
-					<div class="col-lg-5 col-md-5 col-12">
-						<div class="breadcrumbs-menu">
-							<ul>
-								<li><a href="{{ route('home') }}">Accueil</a><i class="fa fa-angle-double-right"></i></li>
-								<li class="active"><a href="{{ route('contact') }}">Contact</a></li>
-							</ul>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Breadcrumbs -->
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs" style="background-image:url('{{asset('assets/img/footer-bg.jpg')}}')">
+        <div class="container">
+            <div class="row">
+                <!-- Breadcrumbs-Content -->
+                <div class="col-lg-7 col-md-7 col-12">
+                    <div class="breadcrumbs-content">
+                        <h2>Nous contacter</h2>
+                        <p>Contactez-nous pour plus d'informations</p>	
+                    </div>
+                </div>
+                <!-- Breadcrumbs-Menu -->
+                <div class="col-lg-5 col-md-5 col-12">
+                    <div class="breadcrumbs-menu">
+                        <ul>
+                            <li><a href="{{ route('home') }}">Accueil</a><i class="fa fa-angle-double-right"></i></li>
+                            <li class="active"><a href="{{ route('contact') }}">Contact</a></li>
+                        </ul>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
     
-   <section class="contact-area py-5">
+    <section class="contact-area py-5">
         <div class="container">
             
             <!-- Section Cartes d'Informations de Contact -->
@@ -32,43 +32,57 @@
                 @forelse($contactInfos as $contactInfo)
                     <div class="col-lg-4 col-md-6 col-12 mb-4">
                         <div class="card h-100 border-0 shadow-sm rounded-3">
-                            <div class="card-body p-4">
-                                
-                                @if($contactInfo->address)
-                                    <div class="d-flex align-items-start mb-3">
-                                        
-                                        <div>
-                                            <h6 class="fw-bold mb-1">Adresse</h6>
-                                            <p class="text-muted mb-0">{{ $contactInfo->address }}</p>
+                            <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    @if($contactInfo->address)
+                                        <div class="d-flex align-items-start mb-3">
+                                            <div>
+                                                <h6 class="fw-bold mb-1"><i class="fa fa-map-marker text-primary me-2"></i>Adresse</h6>
+                                                <p class="text-muted mb-0">{{ $contactInfo->address }}</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                @endif
+                                    @endif
 
+                                    @if($contactInfo->phone)
+                                        <div class="d-flex align-items-start mb-3">
+                                            <div>
+                                                <h6 class="fw-bold mb-1"><i class="fa fa-phone text-primary me-2"></i>Téléphone</h6>
+                                                <p class="mb-0">
+                                                    <a href="tel:{{ $contactInfo->phone }}" class="text-decoration-none text-muted">
+                                                        {{ $contactInfo->phone }}
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    @endif
+
+                                    @if($contactInfo->email)
+                                        <div class="d-flex align-items-start mb-3">
+                                            <div>
+                                                <h6 class="fw-bold mb-1"><i class="fa fa-envelope text-primary me-2"></i>Email</h6>
+                                                <p class="mb-0">
+                                                    <a href="mailto:{{ $contactInfo->email }}" class="text-decoration-none text-muted">
+                                                        {{ $contactInfo->email }}
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    @endif
+                                </div>
+
+                                <!-- Bouton WhatsApp -->
                                 @if($contactInfo->phone)
-                                    <div class="d-flex align-items-start mb-3">
-                                        
-                                        <div>
-                                            <h6 class="fw-bold mb-1">Téléphone</h6>
-                                            <p class="mb-0">
-                                                <a href="tel:{{ $contactInfo->phone }}" class="text-decoration-none text-muted">
-                                                    {{ $contactInfo->phone }}
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                @endif
-
-                                @if($contactInfo->email)
-                                    <div class="d-flex align-items-start">
-                                        
-                                        <div>
-                                            <h6 class="fw-bold mb-1">Email</h6>
-                                            <p class="mb-0">
-                                                <a href="mailto:{{ $contactInfo->email }}" class="text-decoration-none text-muted">
-                                                    {{ $contactInfo->email }}
-                                                </a>
-                                            </p>
-                                        </div>
+                                    @php
+                                        // Nettoyage du numéro de téléphone pour enlever les espaces, +, etc.
+                                        $whatsappNumber = preg_replace('/[^0-9]/', '', $contactInfo->phone);
+                                    @endphp
+                                    <div class="mt-3">
+                                        <a href="https://wa.me/{{ $whatsappNumber }}?text=Bonjour,%20je%20souhaite%20avoir%20plus%20d'informations." 
+                                           target="_blank" 
+                                           class="btn btn-success w-100 d-flex align-items-center justify-content-center gap-2 rounded-pill shadow-sm">
+                                            <i class="fa fa-whatsapp fs-5"></i>
+                                            <span>Discuter sur WhatsApp</span>
+                                        </a>
                                     </div>
                                 @endif
 
