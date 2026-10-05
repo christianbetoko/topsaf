@@ -37,12 +37,12 @@
 							@if($address->image)
 							<div class="blog-img">
 								<img src="{{ asset('storage/' . $address->image) }}" alt="{{ $address->name }}">
-								<img src="{{ asset('storage/' . $address->image) }}" alt="{{ $address->name }}">
+								
 															</div>
 							@else
 							<div class="blog-img">
 								<img src="{{ asset('storage/' . $enterprise->logo) }}" alt="{{ $address->name }}">
-								<img src="{{ asset('storage/' . $enterprise->logo) }}" alt="{{ $address->name }}">
+								<img src="{{ asset('storage/' . $enterprise->logo2) }}" alt="{{ $address->name }}">
 															</div>
 							@endif
 							<div class="blog-body">
