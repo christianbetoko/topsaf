@@ -40,7 +40,7 @@ class AddressResource extends Resource
                                     ->placeholder('Ex: Kinshasa'),
 
                                 Forms\Components\TextInput::make('country')
-                                    ->label('Pays')
+                                     ->label('Pays')
                                     ->default('RDC')
                                     ->placeholder('Ex: République Démocratique du Congo'),
                             ])->columns(2),

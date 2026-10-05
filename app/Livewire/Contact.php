@@ -3,6 +3,7 @@ namespace App\Livewire;
 
 use Carbon\Carbon;
 use App\Models\Enterprise;
+use App\Models\ContactInfo;
 use App\Models\ContactMessage;
 use App\Mail\ContactMessageMail;
 use Illuminate\Support\Facades\Mail;
@@ -56,6 +57,7 @@ class Contact extends Component
     {
         Carbon::setLocale('fr');
         $enterprise = Enterprise::first();
-        return view('livewire.contact', compact('enterprise'));
+        $contactInfos = ContactInfo::all();
+        return view('livewire.contact', compact('enterprise', 'contactInfos'));
     }
 }
