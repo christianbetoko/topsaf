@@ -21,6 +21,7 @@
                                             <li class="{{request()->routeIs('home') ? 'active' : ''}}"><a href="{{ route('home')}}">Accueil</a></li>
                                             <li ><a href="#">A propos <i class="fa fa-angle-down"></i></a>
                                                 <ul class="sub-menu">
+                                                    <li class="{{request()->routeIs('about') ? 'active' : ''}}"><a href="{{ route('about') }}">À propos</a></li>
                                                     <li class="{{request()->routeIs('history') ? 'active' : ''}}"><a href="{{ route('history') }}">Historique</a></li>
                                                     <li class="{{request()->routeIs('nos-adresses') ? 'active' : ''}}"><a href="{{ route('nos-adresses') }}">Nos adresses</a></li>
 													<li class="{{request()->routeIs('testimolnials') ? 'active' : ''}}"><a href="{{ route('testimolnials') }}">Témoignages</a></li>

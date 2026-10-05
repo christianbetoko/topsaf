@@ -30,6 +30,7 @@ use App\Livewire\Temoignages;
 */
 
 Route::get('/', Home::class)->name('home');
+
 Route::get('/historique', History::class)->name('history');
 Route::get('/apropos', Apropos::class)->name('about');
 Route::get('/contact', Contact::class)->name('contact');
