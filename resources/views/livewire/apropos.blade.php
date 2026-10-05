@@ -89,7 +89,7 @@
                                     
                                     <h4 class="m-0">Notre Histoire</h4>
                                 </div>
-                                <p class="text-muted mb-0">{!! nl2br(e($enterprise->historique)) !!}</p>
+                               {!! nl2br(e($enterprise->historique)) !!}
                             </div>
                         </div>
                     @endif
