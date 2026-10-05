@@ -50,7 +50,7 @@
                             @endif
 
                             @if($enterprise->description)
-                                <p class="text-white">{{$enterprise->description}}</p>
+                                <p class="text-white">{!!$enterprise->description!!}</p>
                             @endif
                         </div>
                     </div>
