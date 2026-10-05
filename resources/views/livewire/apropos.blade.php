@@ -46,7 +46,7 @@
                             <h2><b>{{ $enterprise->name }}</b></h2>
                             
                             @if($enterprise->about)
-                                <p class="mt-3">{!! nl2br(e($enterprise->about)) !!}</p>
+                                <p class="text-white">{!! nl2br(e($enterprise->about)) !!}</p>
                             @endif
 
                             @if($enterprise->description)
