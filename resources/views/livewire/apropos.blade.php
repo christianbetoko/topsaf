@@ -89,7 +89,7 @@
                                     
                                     <h4 class="m-0">Notre Histoire</h4>
                                 </div>
-                               {!! $enterprise->historique !!}
+                             <p >  {{$enterprise->historique}} <p>
                             </div>
                         </div>
                     @endif
