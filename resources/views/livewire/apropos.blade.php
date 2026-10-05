@@ -32,8 +32,8 @@
                     <div class="col-lg-6 col-md-6 col-12 wow fadeInLeft" data-wow-duration="1s">
                         <!-- Image / Logo -->
                         <div class="about-img text-center">
-                            @if($enterprise->logo_sans_fond || $enterprise->logo || $enterprise->logo2)
-                                <img src="{{ asset('storage/' . ($enterprise->logo_sans_fond ?? $enterprise->logo ?? $enterprise->logo2)) }}" alt="{{ $enterprise->name }}" class="img-fluid rounded">
+                            @if($enterprise->logo || $enterprise->logo2)
+                                <img src="{{ asset('storage/' . ($enterprise->$enterprise->logo ?? $enterprise->logo2)) }}" alt="{{ $enterprise->name }}" class="img-fluid rounded">
                             @else
                                 <img src="https://via.placeholder.com/470x575" alt="{{ $enterprise->name }}" class="img-fluid rounded">
                             @endif
@@ -42,7 +42,7 @@
                     <div class="col-lg-6 col-md-6 col-12 wow fadeInRight" data-wow-duration="1.5s">
                         <!-- About content -->
                         <div class="about-content">
-                            <span class="text-primary fw-bold">{{ $enterprise->slogan ?? 'À propos de nous' }}</span>
+                            <span class="text-white fw-bold">{{ $enterprise->slogan ?? 'À propos de nous' }}</span>
                             <h2><b>{{ $enterprise->name }}</b></h2>
                             
                             @if($enterprise->about)
@@ -62,9 +62,7 @@
                         <div class="col-lg-4 col-md-6 col-12 mb-4">
                             <div class="card h-100 border-0 shadow-sm p-4 rounded-3">
                                 <div class="d-flex align-items-center mb-3">
-                                    <div class="icon me-3 text-primary fs-3">
-                                        <i class="fa fa-bullseye"></i>
-                                    </div>
+                                   
                                     <h4 class="m-0">Notre Mission</h4>
                                 </div>
                                 <p class="text-muted mb-0">{!! nl2br(e($enterprise->mission)) !!}</p>
@@ -76,9 +74,7 @@
                         <div class="col-lg-4 col-md-6 col-12 mb-4">
                             <div class="card h-100 border-0 shadow-sm p-4 rounded-3">
                                 <div class="d-flex align-items-center mb-3">
-                                    <div class="icon me-3 text-primary fs-3">
-                                        <i class="fa fa-eye"></i>
-                                    </div>
+                                    
                                     <h4 class="m-0">Notre Vision</h4>
                                 </div>
                                 <p class="text-muted mb-0">{!! nl2br(e($enterprise->vision)) !!}</p>
@@ -90,9 +86,7 @@
                         <div class="col-lg-4 col-md-12 col-12 mb-4">
                             <div class="card h-100 border-0 shadow-sm p-4 rounded-3">
                                 <div class="d-flex align-items-center mb-3">
-                                    <div class="icon me-3 text-primary fs-3">
-                                        <i class="fa fa-history"></i>
-                                    </div>
+                                    
                                     <h4 class="m-0">Notre Histoire</h4>
                                 </div>
                                 <p class="text-muted mb-0">{!! nl2br(e($enterprise->historique)) !!}</p>
