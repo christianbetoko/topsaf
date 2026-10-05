@@ -46,11 +46,11 @@
                             <h2><b>{{ $enterprise->name }}</b></h2>
                             
                             @if($enterprise->about)
-                                {{ $enterprise->about }}
+                                <p class="mt-3">{!! nl2br(e($enterprise->about)) !!}</p>
                             @endif
 
                             @if($enterprise->description)
-                                <p class="text-muted">{!! nl2br(e($enterprise->description)) !!}</p>
+                                <p class="text-white">{{$enterprise->description}}</p>
                             @endif
                         </div>
                     </div>
