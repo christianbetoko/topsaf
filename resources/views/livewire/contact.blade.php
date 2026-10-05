@@ -36,9 +36,7 @@
                                 
                                 @if($contactInfo->address)
                                     <div class="d-flex align-items-start mb-3">
-                                        <div class="icon me-3 text-primary fs-4">
-                                            <i class="fa fa-map-marker"></i>
-                                        </div>
+                                        
                                         <div>
                                             <h6 class="fw-bold mb-1">Adresse</h6>
                                             <p class="text-muted mb-0">{{ $contactInfo->address }}</p>
@@ -48,9 +46,7 @@
 
                                 @if($contactInfo->phone)
                                     <div class="d-flex align-items-start mb-3">
-                                        <div class="icon me-3 text-primary fs-4">
-                                            <i class="fa fa-phone"></i>
-                                        </div>
+                                        
                                         <div>
                                             <h6 class="fw-bold mb-1">Téléphone</h6>
                                             <p class="mb-0">
@@ -64,9 +60,7 @@
 
                                 @if($contactInfo->email)
                                     <div class="d-flex align-items-start">
-                                        <div class="icon me-3 text-primary fs-4">
-                                            <i class="fa fa-envelope"></i>
-                                        </div>
+                                        
                                         <div>
                                             <h6 class="fw-bold mb-1">Email</h6>
                                             <p class="mb-0">
